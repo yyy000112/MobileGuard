@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/iv_traffic_icon"
+        android:background="@mipmap/ic_launcher"
+        android:layout_width="45dp"
+        android:layout_height="45dp" />
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_traffic_name"
+            android:text="应用名称"
+            android:textColor="@color/colorBlack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_traffic_rx"
+            android:layout_below="@+id/tv_traffic_name"
+            android:text="下载流量"
+            android:textColor="@color/colorBlack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_traffic_tx"
+            android:text="上传流量"
+            android:textColor="@color/colorBlack"
+            android:layout_below="@+id/tv_traffic_name"
+            android:layout_toRightOf="@+id/tv_traffic_rx"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tv_traffic_total"
+            android:text="流量总计"
+            android:textColor="@color/colorBlack"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+
+
+</LinearLayout>

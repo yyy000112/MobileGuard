@@ -1,0 +1,7 @@
+#Fri Oct 28 15:48:22 CST 2016
+base.0=C\:\\Users\\ye\\AndroidStudioProjects\\MobileGuard\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run_7a6e6f7f8d14241d479b4e0359707680212e2245
+renamed.1=classes2.dex
+renamed.0=classes.dex
+file.1=C\:\\Users\\ye\\AndroidStudioProjects\\MobileGuard\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run-bootstrap_ccb85b6ce6bd771c4f5cf1539cce102aaa703503\\classes.dex
+base.1=C\:\\Users\\ye\\AndroidStudioProjects\\MobileGuard\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run-bootstrap_ccb85b6ce6bd771c4f5cf1539cce102aaa703503
+file.0=C\:\\Users\\ye\\AndroidStudioProjects\\MobileGuard\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\instant-run_7a6e6f7f8d14241d479b4e0359707680212e2245\\classes.dex

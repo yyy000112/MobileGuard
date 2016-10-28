@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/alk_icon"
+        android:background="@mipmap/ic_launcher"
+        android:layout_alignParentLeft="true"
+        android:layout_width="45dp"
+        android:layout_height="45dp" />
+    <TextView
+        android:id="@+id/alk_name"
+        android:text="应用名称"
+        android:textSize="16sp"
+        android:layout_toRightOf="@+id/alk_icon"
+        android:layout_centerVertical="true"
+        android:textColor="@color/colorBlack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:id="@+id/lock_icon"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="@mipmap/unlock"
+        android:layout_width="30dp"
+        android:layout_height="30dp" />
+
+
+</RelativeLayout>

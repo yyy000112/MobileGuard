@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="android.ye.mobileguard"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="19"
+        android:targetSdkVersion="23" />
+
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <!-- 广播中监听重新开启 -->
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <!-- 短信接收权限 -->
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <!-- 定位 -->
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!-- 震动 -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <!-- 窗体挂载view吐司 -->
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <!-- 去电电话监听权限 -->
+    <uses-permission android:name="android.permission.PROCESS_OUTGOING_CALLS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.READ_CALL_LOG" />
+    <uses-permission android:name="android.permission.WRITE_CALL_LOG" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES" />
+
+    <permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+
+    <uses-permission android:name="android.permission.REAL_GET_TASKS" />
+    <uses-permission android:name="android.permission.PACKAGE_USAGE_STATS" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.CLEAR_APP_CACHE" />
+    <uses-permission android:name="android.permission.GET_PACKAGE_SIZE" />
+
+    <application
+        android:name="com.android.tools.fd.runtime.BootstrapApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/app_icon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme" >
+        <activity android:name="android.ye.mobileguard.Activity.SplashActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="android.ye.mobileguard.Activity.HomeActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.HOME" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="android.ye.mobileguard.Activity.SettingActivity" />
+        <activity android:name="android.ye.mobileguard.Activity.Set1Activity" />
+        <activity android:name="android.ye.mobileguard.Activity.Set2Activity" />
+        <activity android:name="android.ye.mobileguard.Activity.Set3Activity" />
+        <activity android:name="android.ye.mobileguard.Activity.Set4Activity" />
+        <activity android:name="android.ye.mobileguard.Activity.SetFinishActivity" />
+        <activity android:name="android.ye.mobileguard.Activity.ContactListActivity" />
+        <activity android:name="android.ye.mobileguard.Activity.ToolsActivity" />
+        <activity android:name="android.ye.mobileguard.Activity.QueryAdrActivity" />
+        <activity
+            android:name="android.ye.mobileguard.Activity.ToastLocationActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity android:name="android.ye.mobileguard.Activity.BlackNumberActivity" />
+        <activity android:name="android.ye.mobileguard.Activity.AppManagerActivity" />
+        <activity android:name="android.ye.mobileguard.Activity.ProcessManagerActivity" />
+        <activity android:name="android.ye.mobileguard.Activity.SettingProcessActivity" />
+        <activity android:name="android.ye.mobileguard.Activity.CommonNumQueryActivity" />
+        <activity android:name="android.ye.mobileguard.Activity.AppLockActivity" />
+        <!-- 拦截界面要在一个单独的任务栈中 -->
+        <!-- 不需要去显示手机卫士的图标,true不要显示最近的图标,false显示最近开启应用的图标 -->
+        <activity
+            android:name="android.ye.mobileguard.Activity.EnterPsdActivity"
+            android:excludeFromRecents="true"
+            android:launchMode="singleInstance" />
+        <activity android:name="android.ye.mobileguard.Activity.AntiVirusActivity" />
+        <activity android:name="android.ye.mobileguard.Activity.CacheClearActivity" />
+        <activity android:name="android.ye.mobileguard.Activity.BaseCacheClearActivity" />
+        <activity android:name="android.ye.mobileguard.Activity.SDCacheClearActivity" />
+        <activity android:name="android.ye.mobileguard.Activity.TrafficInfoActivity" />
+
+        <receiver android:name="android.ye.mobileguard.Receiver.SimAlarm" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="android.ye.mobileguard.Receiver.SmsReceive" >
+            <intent-filter>
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="android.ye.mobileguard.Receiver.DeviceAdmin"
+            android:permission="android.permission.BIND_DEVICE_ADMIN" >
+            <intent-filter>
+                <action android:name="android.app.action.DEVICE_ADMIN_ENABLED" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="android.ye.mobileguard.Receiver.MyAppWidgetProvider" >
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/process_widget_provider" />
+        </receiver>
+        <receiver android:name="android.ye.mobileguard.Receiver.KillProcessReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.KILL_BACKGROUND_PROCESS" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name="android.ye.mobileguard.Service.LocationService" />
+        <service android:name="android.ye.mobileguard.Service.AddressService" />
+        <service android:name="android.ye.mobileguard.Service.BlackNumberService" />
+        <service android:name="android.ye.mobileguard.Service.LockScreenService" />
+        <service android:name="android.ye.mobileguard.Service.AppLockService" />
+        <!-- Service that delivers messages from the phone "quick response" -->
+        <!-- Activity that allows the user to send new SMS/MMS messages -->
+        <activity android:name="android.ye.mobileguard.Activity.ComposeSmsActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+                <action android:name="android.intent.action.SENDTO" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="sms" />
+                <data android:scheme="smsto" />
+                <data android:scheme="mms" />
+                <data android:scheme="mmsto" />
+            </intent-filter>
+        </activity>
+        <!-- BroadcastReceiver that listens for incoming MMS messages -->
+        <receiver
+            android:name="android.ye.mobileguard.Receiver.MmsReceiver"
+            android:permission="android.permission.BROADCAST_WAP_PUSH" >
+            <intent-filter>
+                <action android:name="android.provider.Telephony.WAP_PUSH_DELIVER" />
+
+                <data android:mimeType="application/vnd.wap.mms-message" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="android.ye.mobileguard.Receiver.SmsReceiver"
+            android:permission="android.permission.BROADCAST_SMS" >
+            <intent-filter android:priority="2147483647" >
+                <action android:name="android.provider.Telephony.SMS_DELIVER" />
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+            </intent-filter>
+        </receiver>
+        <!-- Service that delivers messages from the phone "quick response" -->
+        <service
+            android:name="android.ye.mobileguard.Service.HeadlessSmsSendService"
+            android:exported="true"
+            android:permission="android.permission.SEND_RESPOND_VIA_MESSAGE" >
+            <intent-filter>
+                <action android:name="android.intent.action.RESPOND_VIA_MESSAGE" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:scheme="sms" />
+                <data android:scheme="smsto" />
+                <data android:scheme="mms" />
+                <data android:scheme="mmsto" />
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>

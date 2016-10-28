@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:text="手机防盗"
+        style="@style/TitleStye"/>
+    <RelativeLayout
+        android:padding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="安全号码"
+            android:textColor="@color/colorBlack"
+            android:textSize="18sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/safe_num"
+            android:text="12345"
+            android:textSize="18sp"
+            android:textColor="@color/colorBlack"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:layout_below="@+id/safe_num"
+            android:background="@mipmap/listview_divider"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:padding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="防盗保护开启"
+            android:textColor="@color/colorBlack"
+            android:textSize="18sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:id="@+id/safe_lock"
+            android:background="@mipmap/lock"
+            android:layout_alignParentRight="true"
+            android:layout_width="25dp"
+            android:layout_height="25dp" />
+        <ImageView
+            android:layout_below="@+id/safe_lock"
+            android:background="@mipmap/listview_divider"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:padding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/setting_guid"
+            android:text="重新进入设置向导"
+            android:background="@drawable/selector_setting_guid"
+            android:textColor="@color/colorBlack"
+            android:textSize="18sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:layout_below="@+id/setting_guid"
+            android:background="@mipmap/listview_divider"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <TextView
+        android:text="功能简介"
+        android:background="@drawable/setting_guid_press"
+        android:textSize="18sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:text="GPS追踪：#*location*#"
+        android:gravity="center_vertical"
+        android:textSize="18sp"
+        android:textColor="@color/colorBlack"
+        android:drawableLeft="@android:drawable/star_on"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:text="播放报警音乐：#*alarm*#"
+        android:gravity="center_vertical"
+        android:textSize="18sp"
+        android:textColor="@color/colorBlack"
+        android:drawableLeft="@android:drawable/star_on"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:text="远程数据销毁：#*wipedata*#"
+        android:gravity="center_vertical"
+        android:textSize="18sp"
+        android:textColor="@color/colorBlack"
+        android:drawableLeft="@android:drawable/star_on"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:text="远程锁屏：#*lockscreen*#"
+        android:gravity="center_vertical"
+        android:textSize="18sp"
+        android:textColor="@color/colorBlack"
+        android:drawableLeft="@android:drawable/star_on"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

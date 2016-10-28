@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        style="@style/TitleStye"
+        android:text="流量统计" />
+    <!-- android:handle="@+id/handler"把手 -->
+    <!-- android:content="@+id/content"抽屉 -->
+    <!-- vertical由下往上拖拽 -->
+    <!-- horizontal水平拖拽 -->
+    <SlidingDrawer
+        android:handle="@+id/handler"
+        android:content="@+id/content"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <ImageView
+            android:id="@id/handler"
+            android:background="@mipmap/app_icon"
+            android:layout_width="45dp"
+            android:layout_height="45dp"/>
+        <!-- TextView可以修改为其余的一下空间,用于展示不同的抽屉效果 -->
+        <TextView
+            android:id="@id/content"
+            android:background="#ccc"
+            android:text="流量统计之抽屉效果"
+            android:textSize="20sp"
+            android:textColor="@color/colorBlack"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </SlidingDrawer>
+    <View
+        android:id="@+id/ll_loading"
+        android:background="@mipmap/ic_launcher"
+        android:layout_gravity="center"
+        android:layout_width="20dp"
+        android:layout_height="20dp"/>
+    <ListView
+        android:id="@+id/lv_traffic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </ListView>
+
+</LinearLayout>

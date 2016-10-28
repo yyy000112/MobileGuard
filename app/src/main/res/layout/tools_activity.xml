@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        style="@style/TitleStye"
+        android:text="高级工具"/>
+
+    <TextView
+        android:id="@+id/query_phone_address"
+        android:padding="5dp"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:text="归属地查询"
+        android:drawableLeft="@android:drawable/btn_star"
+        android:background="@drawable/selector_toolbtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <View
+        android:background="@color/blackgray"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+    <TextView
+        android:id="@+id/sms_backup"
+        android:padding="5dp"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:text="短信备份"
+        android:drawableLeft="@android:drawable/btn_star"
+        android:background="@drawable/selector_toolbtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <View
+        android:background="@color/blackgray"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+    <TextView
+        android:id="@+id/query_number"
+        android:padding="5dp"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:text="常用号码查询"
+        android:drawableLeft="@android:drawable/btn_star"
+        android:background="@drawable/selector_toolbtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <View
+        android:background="@color/blackgray"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+    <TextView
+        android:id="@+id/lock"
+        android:padding="5dp"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:text="程序锁"
+        android:drawableLeft="@android:drawable/btn_star"
+        android:background="@drawable/selector_toolbtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <View
+        android:background="@color/blackgray"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+    <ProgressBar
+        android:id="@+id/pr_bar"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:visibility="invisible"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>

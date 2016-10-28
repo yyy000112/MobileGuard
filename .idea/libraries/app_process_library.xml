@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="app_process_library">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/app/libs/app_process_library.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

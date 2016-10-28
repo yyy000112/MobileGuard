@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:text="首页"
+        style="@style/TitleStye"
+        />
+<!--跑马灯-->
+    <android.ye.mobileguard.View.FocusTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="上士闻道，勤而习之；中士闻道，若存若亡；下士闻之，大笑之，不笑不足以为道；心寒牌手机卫士，谁用谁放心，无广告无插件，绿色纯净"
+        android:singleLine="true"
+        android:ellipsize="marquee"
+        android:padding="5dp"
+        android:marqueeRepeatLimit="marquee_forever" />
+    <GridView
+        android:id="@+id/Grid_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:numColumns="3"
+        android:verticalSpacing="10dp"
+        >
+
+    </GridView>
+
+</LinearLayout>

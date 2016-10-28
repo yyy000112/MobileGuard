@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="C:\Users\ye\AndroidStudioProjects\MobileGuard\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="673d77a5bbddd766037f088e775df525c46407f0">
+        <dex dex="C:\Users\ye\AndroidStudioProjects\MobileGuard\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-vector-drawable-23.2.1_554073f7ee32aebe7e5f0213288c3866c2688701\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\ye\AndroidStudioProjects\MobileGuard\app\libs\xUtils-2.6.14.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="f10c51f3e0732fdeefe6e104279a58e275879b6c">
+        <dex dex="C:\Users\ye\AndroidStudioProjects\MobileGuard\app\build\intermediates\transforms\dex\debug\folders\1000\2\xUtils-2.6.14_b723210fac2fef7eb06456288fe6bf9c697ed6c8\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\ye\AndroidStudioProjects\MobileGuard\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.2.1\jars\libs\internal_impl-23.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="607a3d0b8013b4ccbfeb0b7cb293351994e021fb">
+        <dex dex="C:\Users\ye\AndroidStudioProjects\MobileGuard\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-23.2.1_13bde4a6bb5868babd1dd7d60a64e894c796d3a6\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\ye\AndroidStudioProjects\MobileGuard\app\libs\app_process_library.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="a370c5840bd29f0d0016078bbc56c0ed6f886d80">
+        <dex dex="C:\Users\ye\AndroidStudioProjects\MobileGuard\app\build\intermediates\transforms\dex\debug\folders\1000\2\app_process_library_97ec8b50d4093fcce7fc7ce8cd068512d6c8feb6\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\ye\AndroidStudioProjects\MobileGuard\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="7e0940e4c14faf37a951480a89c8b11003bd1014">
+        <dex dex="C:\Users\ye\AndroidStudioProjects\MobileGuard\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_ccb85b6ce6bd771c4f5cf1539cce102aaa703503\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\ye\AndroidStudioProjects\MobileGuard\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\23.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="3469cb457f10f74c28cbc05f069b6c894f6cbdd0">
+        <dex dex="C:\Users\ye\AndroidStudioProjects\MobileGuard\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-animated-vector-drawable-23.2.1_8533259ad84a8f29c9fb352a1bdbd0a5d2ebcd42\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\ye\AndroidStudioProjects\MobileGuard\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="9e0628583a2ae3cf6ed1305279f01722bb2e7eb0">
+        <dex dex="C:\Users\ye\AndroidStudioProjects\MobileGuard\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_7a6e6f7f8d14241d479b4e0359707680212e2245\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\ye\AndroidStudioProjects\MobileGuard\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="3be474b1b21b31cf2fa93fe6bd641ae108d96452">
+        <dex dex="C:\Users\ye\AndroidStudioProjects\MobileGuard\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-23.2.1_fac1a2807c7d0ac4605e0ef38c1f7fb25e827565\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\23.2.1\support-annotations-23.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="ccb693bc0774fcb637246f7360de25b4af7df318">
+        <dex dex="C:\Users\ye\AndroidStudioProjects\MobileGuard\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-23.2.1_53228a26bf040f0bd5a2b4459950d59ba9a9410e\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\ye\AndroidStudioProjects\MobileGuard\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.2.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.3"
+        sha1="e4d0cbb0b999604b349062f0214a0a228a7fd151">
+        <dex dex="C:\Users\ye\AndroidStudioProjects\MobileGuard\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-23.2.1_eea15af9c88c4efa6a4a1801f413582f59ac0bfd\classes.dex" />
+    </item>
+
+</items>

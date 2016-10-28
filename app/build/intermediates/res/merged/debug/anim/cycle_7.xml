@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--插补器：利用数学函数做出来的曲线-->
+<cycleInterpolator xmlns:android="http://schemas.android.com/apk/res/android" android:cycles="7" />
